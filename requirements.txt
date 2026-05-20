@@ -1,0 +1,5 @@
+anthropic>=0.103.0
+streamlit>=1.57.0
+python-dotenv>=1.0.0
+# For Ollama backend: pip install openai
+# openai>=1.0.0
