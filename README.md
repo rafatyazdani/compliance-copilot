@@ -225,3 +225,19 @@ pip install anthropic streamlit python-dotenv openai
 - Regulatory guidance, enforcement practice, and fine amounts change. Verify citations against primary sources before use in formal compliance programmes.
 - Remediation Planner outputs structured JSON — smaller Ollama models (3B parameters) may occasionally omit fields or produce invalid JSON. The engine validates and fills defaults, but complex findings benefit from larger models (`llama3.1:8b` or above).
 - The Document Analyser works best with documents under ~8,000 words. Larger documents should be split by section before analysis.
+
+---
+
+## Related artifacts in the portfolio
+
+- The Remediation Planner output JSON (`root_cause_category`, `suggested_owner_role`, `recommended_due_date_days`, `relevant_frameworks`) is intentionally compatible with the **Issue Register** tab of the [`security-risk-register`](https://github.com/rafatyazdani/security-risk-register) Excel workbook — paste the JSON in, and the ROSI prioritization runs automatically.
+- For **security finding** (not regulatory finding) prioritization, see [`security-issues-prioritization`](https://github.com/rafatyazdani/security-issues-prioritization). Both tools share the same remediation JSON schema and can run side by side.
+- For the **broader compliance maturity** picture, see [`maturity-scoring-engine`](https://github.com/rafatyazdani/maturity-scoring-engine) — NIST CSF 2.0, CIS v8, ISO 27001:2022 scoring.
+
+---
+
+**Built by Rafat Yazdani** — CPA · CISSP · CISA · CCSK · AWS Certified
+Security Strategy & Cyber Risk Quantification — Accenture Security
+
+> Methodology backbone: **CRQ-F Framework** (Cyber Risk Quantification — Financial).
+> Portfolio overview: [github.com/rafatyazdani](https://github.com/rafatyazdani) — Methodology · Quantification math · Consulting products · Governance & maturity · Operations · Board output.
